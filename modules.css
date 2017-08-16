@@ -1,0 +1,27 @@
+  header {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .profile-pic img {
+    max-width: 90%;
+  }
+
+  .projects img {
+    max-width: 90%;
+  }
+
+  .qualifications {
+    max-width: 90%;
+  }
+
+  .skills {
+    float: left;
+  }
+  
+  .tools {
+    float: right;
+  }
