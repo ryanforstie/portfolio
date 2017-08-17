@@ -22,31 +22,32 @@
     <nav class="main-nav">
       <div class="icon-menu"></div>
       <ul>
-        <li><a href="" class="">Home</a></li>
-        <li><a href="" class="">Profile</a></li>
-        <li><a href="" class="">Projects</a></li>
-        <li><a href="" class="">Qualifications</a></li>
+        <li class="tab" data-content="hero-image"><a href="#" class="">Home</a></li>
+        <li class="tab" data-content="profile"><a href="#" class="">Profile</a></li>
+        <li class="tab" data-content="projects"><a href="#" class="">Projects</a></li>
+        <li class="tab" data-content="qualifications"><a href="#" class="">Qualifications</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero-image">
+    <section id="hero-image" class="tab-content">
       <img src="http://placehold.it/960x450/000">
     </section>
 
-    <section class="profile">
-      <div class="profile-content">
+    <section id="profile" class="tab-content">
+      <div class="profile-text">
         <h1>Profile</h1>
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="profile-pic">
         <img src="http://placehold.it/480x225/000">
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="tab-content">
       <h1>Projects</h1>
       <div class="project1">
         <img src="http://placehold.it/480x225/000">
@@ -56,7 +57,7 @@
       </div>
     </section>
 
-    <section class="qualifications">
+    <section id="qualifications" class="tab-content">
       <div class="skills">
         <h1>Skills</h1>
         <ul>
@@ -77,6 +78,13 @@
       </div>
     </section>
   </main>
+
+  <div class="footer">
+    &copy; 2017 Ryan Forstie | Professional Portfolio
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="portfolioView.js"></script>
 
 </body>
 
