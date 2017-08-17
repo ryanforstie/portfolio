@@ -21,7 +21,30 @@
   .skills {
     float: left;
   }
-  
+
   .tools {
     float: right;
+  }
+
+  .main-nav li {
+  margin-right: .5em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+  @media only screen and (min-width: 640px) {
+    .main-nav {
+      padding: .5em;
+    }
+
+    .main-nav ul {
+      display: block;
+    }
+
+    .main-nav ul li {
+      display: inline;
+      border-bottom: none;
+    }
+
   }
