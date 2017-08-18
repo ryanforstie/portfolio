@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
@@ -41,11 +41,6 @@ header nav {
   float: right;
 }
 
-header .current a {
-  color: red;
-  font-weight: bold;
-}
-
 header a:hover {
   color: black;
   font-weight: bold;
@@ -60,35 +55,28 @@ header a:hover {
 }
 
 #projects .project {
-  /*display: flex;*/
   float: left;
-  /*align-items: center;*/
   text-align: center;
-  /*justify-content: center;*/
-  width: 30%;
-  /*padding 5px;*/
+  width: 33.3%;
 }
 
 #projects .project img {
-  width: 90px;
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
+  width: 210px;
 }
 
 #profiles {
   margin-top: 20px;
 }
 
-#profiles .profile1 {
+#profiles .profile {
   float: left;
   text-align: center;
   width: 50%;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 #profiles .profile img {
-  width: 150px;
+  /*width: 150px;*/
 }
 
 footer {
@@ -97,6 +85,10 @@ footer {
   color: gray;
   background-color: black;
   text-align: center;
+}
+
+#showcase img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -112,8 +104,28 @@ footer {
     padding-bottom: 10px;
   }
 
+  #showcase {
+    margin-bottom: -20px;
+  }
+
+  #projects .project {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  #profiles .profile {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+  }
+
 }
 
-#showcase img {
-  width: 100%;
+@media (max-width: 375px) {
+  #showcase {
+    margin-bottom: -100px;
+  }
 }

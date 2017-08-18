@@ -17,24 +17,26 @@
       <div id="branding">
         <h1>Ryan Forstie</h1>
       </div>
-      <nav>
+      <nav id="main-nav">
         <ul>
-          <li class="current"><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Profile</a></li>
+          <li class="tab" data-content="showcase"><a href="#">Home</a></li>
+          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
+          <li class="tab" data-content="profiles"><a href="#">Profile</a></li>
           <li><a href="https://github.com/ryanforstie">GitHub</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="showcase">
+  <!-- <main id="home" class="tab-content"> -->
+
+  <section id="showcase" class="tab-content">
     <div class="container">
       <img src="http://placehold.it/700x350/000" alt="">
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="tab-content">
     <div class="container">
       <div class="project">
         <img src="http://placehold.it/200x100/000" alt="">
@@ -54,7 +56,7 @@
     </div>
   </section>
 
-  <section id="profiles">
+  <section id="profiles" class="tab-content">
     <div class="container">
       <div class="profile">
         <img src="http://placehold.it/200x100/000" alt="">
@@ -72,6 +74,10 @@
   <footer>
     <p>Ryan Forstie | Professional Profile | Copyright &copy; 2017</p>
   </footer>
+</main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="test.js"></script>
 
 </body>
 
