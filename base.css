@@ -1,6 +1,9 @@
 body {
-  margin: 0px auto;
-  width: 70%;
+  width: 100%;
+}
+
+img {
+  /*width: 100%;*/
 }
 
 a {
