@@ -2,8 +2,8 @@
     max-width: 100%;
   }
 
-  #slider .slide {
-    /*max-width: 100%;*/
+  .slide {
+    max-width: 100%;
   }
 
   #profile img {
