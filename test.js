@@ -3,14 +3,17 @@
 var portfolioView = {};
 
 portfolioView.handleMainNav = function() {
+  $('#main-nav').on('click', '.tab', function() {
 
-  $('#main-nav .tab').on('click', function() {
-    var $whereToGo = $(this).attr('data-content');
-    $('.tab-content').hide();
-    $('#' + $whereToGo).fadeIn(1000);
+    if ($(this).data('content') === 'showcase') {
+      $('.tab-content').fadeIn();
+    } else {
+      $('.tab-content').hide();
+      $('#' + $(this).data('content')).fadeIn();
+    }
+
   });
-
-  $('.main-nav .tab:first').click();
+  $('#main-nav').click();
 };
 
 $(document).ready(function() {
