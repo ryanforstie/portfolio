@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="modules.css">
+  <link rel="stylesheet" href="slider.css">
   <title>Professional Profile</title>
 </head>
 
@@ -32,7 +33,16 @@
 
   <main>
     <section id="hero-image" class="tab-content">
-      <img src="http://placehold.it/960x450/000">
+
+      <div id="slider">
+        <ul class="slides">
+          <li class="slide"><img src="img/IMG_0376.JPG"></li>
+          <li class="slide"><img src="img/IMG_0591.JPG"></li>
+          <li class="slide"><img src="img/IMG_1273.JPG"></li>
+          <li class="slide"><img src="img/IMG_0376.JPG"></li>
+        </ul>
+      </div>
+
     </section>
 
     <section id="profile" class="tab-content">
@@ -79,11 +89,10 @@
     </section>
   </main>
 
-  <div class="footer">
-    &copy; 2017 Ryan Forstie | Professional Portfolio
-  </div>
+  <footer></footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="slider.js"></script>
   <script src="portfolioView.js"></script>
 
 </body>

@@ -2,20 +2,20 @@
     max-width: 100%;
   }
 
-  #hero-image img {
-    max-width: 100%;
+  #slider .slide {
+    /*max-width: 100%;*/
   }
 
   #profile img {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   #projects img {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   #qualifications {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .skills {
@@ -25,16 +25,6 @@
   .tools {
     float: right;
   }
-
-  .footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1em;
-  background-color: #efefef;
-  text-align: center;
-}
 
   .main-nav li {
   margin-right: .5em;
