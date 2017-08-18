@@ -3,9 +3,9 @@
 $(function() {
 
   //configure
-  var width = 720;
-  var animationSpeed = 1000;
-  var pause = 3000;
+  var width = 1000;
+  var animationSpeed = 2000;
+  var pause = 5000;
   var currentSlide = 1;
 
   //cache dom

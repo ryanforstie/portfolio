@@ -1,5 +1,5 @@
 #slider {
-  width: 720px;
+  width: 1000px;
   height: 400px;
   overflow: hidden;
 }
@@ -15,6 +15,6 @@
 #slider .slide {
   float: left;
   list-style-type: none;
-  width: 720px;
+  width: 1000px;
   height: 400px;
 }
