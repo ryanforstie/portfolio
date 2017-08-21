@@ -1,39 +1,48 @@
 'use strict';
 
-$(function() {
+// $(document).ready(function() {
+//   $('.next').on('click', function() {
+//     console.log('clicked');
+//     var currentImg = $('.active');
+//     var nextImg = currentImg.next();
+//
+//     if (nextImg.length) {
+//       currentImg.removeClass('active').css('z-index', -10);
+//       nextImg.addClass('active').css('z-index', 10);
+//     } else {
+//         // nextImg = $('.slider-inner img:first');
+//     }
+//   });
+//
+//   $('.prev').on('click', function() {
+//     var currentImg = $('.active');
+//     var prevImg = currentImg.prev();
+//
+//     if (prevImg.length) {
+//       currentImg.removeClass('active').css('z-index', -10);
+//       prevImg.addClass('active').css('z-index', 10);
+//     }
+//   });
+//
+// });
 
-  //configure
-  var width = 1000;
-  var animationSpeed = 2000;
-  var pause = 5000;
-  var currentSlide = 1;
+$(document).ready(function() {
+  $('.next').on('click', function() {
+    var nextImg = $('img.active').next('.slider-inner img');
+    if (nextImg.length === 0) {
+      nextImg = $('.slider-inner img:first');
+    }
+    $('img.active').removeClass('active');
+    nextImg.addClass('active');
+  });
 
-  //cache dom
-  var $slider = $('#slider');
-  var $slideContainer = $slider.find('.slides');
-  var $slides = $slideContainer.find('.slide');
+  $('.prev').on('click', function() {
+    var prevImg = $('img.active').prev('.slider-inner img');
+    if (prevImg.length === 0) {
+      prevImg = $('.slider-inner img:last');
+    }
+    $('img.active').removeClass('active');
+    prevImg.addClass('active');
+  });
 
-  var interval;
-
-  function startSlider() {
-    interval = setInterval(function() {
-      $slideContainer.animate({'margin-left': '-=' + width}, animationSpeed, function() {
-        currentSlide++;
-        if (currentSlide === $slides.length) {
-          currentSlide = 1;
-          $slideContainer.css('margin-left', 0);
-        }
-      });
-    }, pause);
-
-  }
-
-  function stopSlider() {
-    clearInterval(interval);
-  }
-
-  $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
-
-  startSlider();
-
-});
+});﻿

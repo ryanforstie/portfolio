@@ -47,7 +47,8 @@ header a:hover {
 }
 
 #showcase {
-  min-height: 400px;
+  max-width: 100%;
+  /*min-height: 400px;*/
 }
 
 #projects {
@@ -88,7 +89,7 @@ footer {
 }
 
 #showcase img {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 @media (max-width: 768px) {
@@ -126,6 +127,6 @@ footer {
 
 @media (max-width: 375px) {
   #showcase {
-    margin-bottom: -100px;
+    margin-bottom: -50px;
   }
 }
