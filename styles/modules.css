@@ -1,0 +1,66 @@
+  .container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slide {
+    max-width: 100%;
+  }
+
+  #showcase {
+    margin-top: -20px;
+  }
+
+  .main-nav li {
+    margin-right: .5em;
+    font-size: 1.5em;
+    padding: .5em .2em;
+    border-bottom: 1px solid #ccc;
+  }
+
+  @media only screen and (min-width: 640px) {
+    .main-nav {
+      padding: .5em;
+    }
+    .main-nav ul {
+      display: block;
+    }
+    .main-nav ul li {
+      display: inline;
+      border-bottom: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header #branding, header nav, header nav li {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+    header {
+      padding-bottom: 10px;
+    }
+    #showcase {
+      margin-bottom: -20px;
+    }
+    #projects .project {
+      float: none;
+      text-align: center;
+      width: 100%;
+      margin: 20px 0px;
+    }
+    #profiles .profile {
+      float: none;
+      text-align: center;
+      width: 100%;
+      margin: 20px 0px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    #showcase {
+      margin-top: 50px;
+      margin-bottom: -50px;
+    }
+  }
