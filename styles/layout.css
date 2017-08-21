@@ -1,0 +1,31 @@
+#projects {
+  margin-top: 20px;
+}
+
+#projects .project {
+  float: left;
+  text-align: center;
+  width: 33.3%;
+}
+
+#projects .project img {
+  width: 210px;
+}
+
+#profiles {
+  margin-top: 20px;
+}
+
+#profiles .profile {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: gray;
+  background-color: black;
+  text-align: center;
+}
