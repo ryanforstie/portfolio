@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "301 professional portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanforstie/portfolio.git"
+  },
+  "keywords": [
+    "professional",
+    "portfolio",
+    "codefellows",
+    "301"
+  ],
+  "author": "Ryan Forstie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanforstie/portfolio/issues"
+  },
+  "homepage": "https://github.com/ryanforstie/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
