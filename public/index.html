@@ -11,6 +11,20 @@
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="stylesheet" href="styles/slider.css">
   <title>Professional Profile | Welcome</title>
+
+  <script id="project-template" type="text/x-handlebars-template">
+
+    <section>
+      <div class="container">
+        <div class="project">
+          <!-- <img src="http://placehold.it/200x150/000" alt=""> -->
+          <h3>{{title}}</h3> {{{body}}}
+        </div>
+      </div>
+    </section>
+
+  </script>
+
 </head>
 
 <body>
@@ -53,11 +67,11 @@
     <section id="projects" class="tab-content">
       <div class="container">
         <div class="project">
-          <img src="http://placehold.it/200x150/000" alt="">
+          <!-- <img src="http://placehold.it/200x150/000" alt="">
           <h3>Project</h3>
-          <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
         </div>
-        <div class="project">
+        <!-- <div class="project">
           <img src="http://placehold.it/200x150/000" alt="">
           <h3>Project</h3>
           <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -66,7 +80,7 @@
           <img src="http://placehold.it/200x150/000" alt="">
           <h3>Project</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -91,6 +105,9 @@
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script src="scripts/projectsData.js"></script>
+  <script src="scripts/project.js"></script>
   <script src="scripts/portfolioView.js"></script>
   <script src="scripts/slider.js"></script>
 
