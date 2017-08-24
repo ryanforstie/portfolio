@@ -5,6 +5,7 @@ var projects = [];
 function Project(rawDataObj) {
   this.title = rawDataObj.title;
   this.body = rawDataObj.body;
+  this.projectImg = rawDataObj.projectImg;
 }
 
 Project.prototype.toHtml = function() {
