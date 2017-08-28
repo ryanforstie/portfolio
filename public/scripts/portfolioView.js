@@ -16,6 +16,11 @@ portfolioView.handleMainNav = function() {
   $('#main-nav').click();
 };
 
-$(document).ready(function() {
+portfolioView.initIndexPage = function() {
+  Project.all.forEach(function(project) {
+    $('#projects').append(project.toHtml());
+  });
+
   portfolioView.handleMainNav();
-});
+// });
+};

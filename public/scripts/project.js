@@ -1,6 +1,6 @@
 'use strict';
 
-var projects = [];
+// var projects = [];
 
 function Project(rawDataObj) {
   this.title = rawDataObj.title;
@@ -8,22 +8,25 @@ function Project(rawDataObj) {
   this.projectImg = rawDataObj.projectImg;
 }
 
-// Project.all = [];
+Project.all = [];
 
 Project.prototype.toHtml = function() {
-  var projectTemplate = $('#project-template').html();
-  var templateRender = Handlebars.compile(projectTemplate);
+  // var projectTemplate = $('#project-template').html();
+  // var templateRender = Handlebars.compile(projectTemplate);
 
-  return templateRender(this);
+  var template = Handlebars.compile($('#project-template').text());
+
+  return template(this);
+  // return templateRender(this);
 };
 
-rawData.forEach(function(projectObject) {
-  projects.push(new Project(projectObject));
-});
-
-projects.forEach(function(project) {
-  $('#projects').append(project.toHtml());
-});
+// rawData.forEach(function(projectObject) {
+//   projects.push(new Project(projectObject));
+// });
+//
+// projects.forEach(function(project) {
+//   $('#projects').append(project.toHtml());
+// });
 
 
 Project.loadAll = function(rawData) {
@@ -38,15 +41,15 @@ Project.fetchAll = function() {
 
     Project.loadAll(JSON.parse(localStorage.rawData));
 
-    // articleView.initIndexPage();
+    portfolioView.initIndexPage();
 
   } else {
 
-    $.getJSON('scripts/projectsData.js').then(function(data) {
+    $.getJSON('data/projectsData.json').then(function(data) {
 
       localStorage.setItem('rawData', JSON.stringify(data));
       Project.loadAll(JSON.parse(localStorage.rawData));
-      // articleView.initIndexPage();
+      portfolioView.initIndexPage();
     });
 
   }
