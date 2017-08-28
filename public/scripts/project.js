@@ -41,7 +41,7 @@ Project.fetchAll = function() {
 
     Project.loadAll(JSON.parse(localStorage.rawData));
 
-    projectView.initIndexPage();
+    portfolioView.initIndexPage();
 
   } else {
 
@@ -49,7 +49,7 @@ Project.fetchAll = function() {
 
       localStorage.setItem('rawData', JSON.stringify(data));
       Project.loadAll(JSON.parse(localStorage.rawData));
-      projectView.initIndexPage();
+      portfolioView.initIndexPage();
     });
 
   }
