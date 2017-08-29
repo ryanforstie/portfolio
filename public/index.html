@@ -37,9 +37,9 @@
       </div>
       <nav id="main-nav">
         <ul>
-          <li class="tab" data-content="showcase"><a href="#">Home</a></li>
-          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
-          <li class="tab" data-content="profiles"><a href="#">Profile</a></li>
+          <li class="tab" data-content="showcase"><a href="/">Home</a></li>
+          <li class="tab" data-content="projects"><a href="/projects">Projects</a></li>
+          <li class="tab" data-content="profiles"><a href="/profile">Profile</a></li>
           <li><a href="https://github.com/ryanforstie">GitHub</a></li>
         </ul>
       </nav>
@@ -108,12 +108,19 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-  <script src="./scripts/projectsData.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="/scripts/projectsData.js"></script>
   <!-- <script src="./vendor/scripts/handlebars.js"></script> -->
-  <script src="./scripts/project.js"></script>
-  <script src="./scripts/portfolioView.js"></script>
-  <script src="./scripts/slider.js"></script>
-  <script> Project.fetchAll(); </script>
+  <script src="/scripts/project.js"></script>
+  <script src="/scripts/portfolioView.js"></script>
+  <script src="/scripts/slider.js"></script>
+
+  <script src="/scripts/controllers/homeController.js"></script>
+  <script src="/scripts/controllers/projectsController.js"></script>
+  <script src="/scripts/controllers/profileController.js"></script>
+  <script src="/scripts/controllers/routes.js"></script>
+
+  <!-- <script> Project.fetchAll(); </script> -->
 
 </body>
 

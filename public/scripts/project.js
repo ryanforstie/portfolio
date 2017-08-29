@@ -1,6 +1,10 @@
 'use strict';
 
+// var app = app || {};
+
 // var projects = [];
+
+// (function(module) {
 
 function Project(rawDataObj) {
   this.title = rawDataObj.title;
@@ -54,3 +58,6 @@ Project.fetchAll = function() {
 
   }
 };
+
+//   module.Project = Project;
+// })(app);
