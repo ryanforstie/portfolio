@@ -1,5 +1,6 @@
 #projects {
   margin-top: 20px;
+  /*background-color: white;*/
   /*margin-bottom: 80px;*/
 }
 
@@ -7,6 +8,8 @@
   float: left;
   text-align: center;
   width: 33.3%;
+  /*background-color: white;*/
+
   /*margin-bottom: 50px;*/
 }
 

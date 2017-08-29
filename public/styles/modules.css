@@ -1,8 +1,8 @@
-  /*.container {
+  .container {
     width: 100%;
     margin: auto;
     overflow: hidden;
-  }*/
+  }
 
   .slide {
     max-width: 100%;
