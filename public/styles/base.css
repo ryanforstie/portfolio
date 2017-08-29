@@ -11,7 +11,16 @@ header {
   max-width: 100%;
 }
 
+ header {
+  width: 100%;
+  position: fixed;
+  z-index: 150;
+}
+
 header {
+  /*width: 100%;
+  position: fixed;
+  z-index: 170;*/
   background: gray;
   color: #f9f9f9;
   padding-top: 20px;
