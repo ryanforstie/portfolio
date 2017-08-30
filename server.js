@@ -8,6 +8,7 @@
 // Be sure to install that and save it as a dependency after you create your package.json.
 const express = require('express');
 const app = express();
+const requestProxy = require('express-request-proxy');
 // const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 5000;
 
@@ -15,7 +16,15 @@ const PORT = process.env.PORT || 5000;
 app.use(express.static('./public'));
 
 // TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
+function proxyGitHub(request, response) {
+  console.log('Routing GitHub request for', request.params[0]);
+  (requestProxy({
+    url: `https://api.github.com/${request.params[0]}`,
+    headers: {Authorization: `token ${process.env.GITHUB_TOKEN}`}
+  }))(request, response);
+}
 
+app.get('/github/*', proxyGitHub);
 
 // app.post('/articles', bodyParser, function(request, response) {
   // REVIEW: This route will receive a new article from the form page, new.html,
