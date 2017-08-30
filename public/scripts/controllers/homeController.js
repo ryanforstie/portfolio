@@ -10,7 +10,7 @@
 
   homeController.init = function() {
     $('.tab-content').hide();
-    $('.tab-content').show();
+    $('main > section').show();
   }
 
 //   module.homeController = homeController;

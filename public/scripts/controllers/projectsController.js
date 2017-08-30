@@ -7,8 +7,13 @@
   const projectsController = {};
 
   projectsController.init = function() {
-    $('.tab-content').hide();
-    $('#projects').show();
+    // $('.tab-content').hide();
+    // $('#projects').show();
+
+    $('#projects').show().siblings().hide();
+
+    repos.requestRepos(repoView.index);
+
   }
 
 //   module.projectsController = projectsController;
