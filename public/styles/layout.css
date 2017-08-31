@@ -1,35 +1,57 @@
-#projects {
-  margin-top: 20px;
-  /*background-color: white;*/
-  /*margin-bottom: 80px;*/
+#projects .project h3 {
+  font-size: 1.5em;
+  padding: 30px;
+}
+
+#projects .project p {
+  padding: 10px;
+  letter-spacing: .1em;
+  line-height: 2em;
 }
 
 #projects .project {
   float: left;
   text-align: center;
   width: 33.3%;
-  /*background-color: white;*/
-
-  /*margin-bottom: 50px;*/
+  margin-top: 40px;
 }
 
 #projects .project img {
-  width: 210px;
+  width: 230px;
 }
 
 #profiles {
-  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 #profiles .profile {
+  margin-top: 50px;
   float: left;
   text-align: center;
   width: 50%;
 }
 
+#profiles .profile img {
+  margin-top: 50px;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+}
+
+#profiles .profile h3 {
+  font-size: 1.5em;
+  padding: 30px;
+}
+
+#profiles .profile p {
+  padding: 10px;
+  letter-spacing: .1em;
+  line-height: 2em;
+}
+
 footer {
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   color: gray;
   background-color: black;
   text-align: center;

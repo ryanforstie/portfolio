@@ -8,30 +8,12 @@
     max-width: 100%;
   }
 
-  #showcase {
-    margin-top: -20px;
-  }
-
   .main-nav li {
     margin-right: .5em;
     font-size: 1.5em;
     padding: .5em .2em;
     border-bottom: 1px solid #ccc;
   }
-
-
-  /*@media only screen and (min-width: 640px) {
-    .main-nav {
-      padding: .5em;
-    }
-    .main-nav ul {
-      display: block;
-    }
-    .main-nav ul li {
-      display: inline;
-      border-bottom: none;
-    }
-  }*/
 
   @media only screen and (max-width: 768px) {
     header #branding, header nav, header nav li {
@@ -40,22 +22,25 @@
       width: 100%;
     }
     header {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
     }
     #showcase {
-      margin-bottom: -20px;
+      margin-bottom: -40px;
+    }
+    #projects .project img {
+      margin-top: 100px;
+      width: 300px;
     }
     #projects .project {
       float: none;
       text-align: center;
       width: 100%;
-      margin: 20px 0px;
     }
     #profiles .profile {
       float: none;
       text-align: center;
       width: 100%;
-      margin: 20px 0px;
+      margin: 50px 0px;
     }
   }
 

@@ -11,6 +11,9 @@ var app = app || {};
   homeController.init = function() {
     $('.tab-content').hide();
     $('main > section').show();
+
+    $('footer').show()
+
   }
 
   module.homeController = homeController;
