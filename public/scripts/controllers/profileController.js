@@ -9,6 +9,9 @@ var app = app || {};
   profileController.init = function() {
     $('.tab-content').hide();
     $('#profiles').show();
+
+    $('footer').hide()
+    
   }
 
   module.profileController = profileController;

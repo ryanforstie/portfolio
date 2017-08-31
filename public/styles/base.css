@@ -11,16 +11,7 @@ header {
   max-width: 100%;
 }
 
- header {
-  width: 100%;
-  /*position: fixed;
-  z-index: 150;*/
-}
-
 header {
-  /*width: 100%;
-  position: fixed;
-  z-index: 170;*/
   background: gray;
   color: #f9f9f9;
   padding-top: 20px;
@@ -31,17 +22,21 @@ header {
 header a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.4em;
+  letter-spacing: .1em;
 }
 
 header li {
   float: left;
   display: inline;
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 header #branding {
   float: left;
+  font-size: 1.5em;
+  letter-spacing: .15em;
+  padding-left: 20px;
 }
 
 header nav {

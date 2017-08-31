@@ -11,6 +11,7 @@ var app = app || {};
     $('#projects').show().siblings().hide();
     // $('.tab-content').hide();
     // $('#projects').show();
+    $('footer').hide()
 
     app.repos.requestRepos(app.repoView.index);
 
