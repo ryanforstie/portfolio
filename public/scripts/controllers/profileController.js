@@ -1,8 +1,8 @@
 'use strict';
 
-// var app = app || {};
+var app = app || {};
 
-// (function(module) {
+(function(module) {
 
   const profileController = {};
 
@@ -11,6 +11,6 @@
     $('#profiles').show();
   }
 
+  module.profileController = profileController;
 
-//   module.profileController = profileController;
-// })(app);
+})(app);

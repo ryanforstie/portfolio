@@ -1,6 +1,26 @@
 'use strict';
 
-var portfolioView = {};
+var app = app || {};
+
+(function(module) {
+
+  const portfolioView = {};
+
+  portfolioView.initIndexPage = function() {
+
+    app.Project.all.forEach(function(project) {
+      $('#projects').append(project.toHtml());
+
+    });
+
+  };
+
+  module.portfolioView = portfolioView;
+
+})(app);
+
+
+// Old jQuery way of handling the main nav
 
 // portfolioView.handleMainNav = function() {
 //   $('#main-nav').on('click', '.tab', function() {
@@ -16,11 +36,4 @@ var portfolioView = {};
 //   $('#main-nav').click();
 // };
 
-portfolioView.initIndexPage = function() {
-  Project.all.forEach(function(project) {
-    $('#projects').append(project.toHtml());
-  });
-//
-//   // portfolioView.handleMainNav();
-//
-};
+//    portfolioView.handleMainNav();
