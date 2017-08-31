@@ -1,12 +1,17 @@
 'use strict';
 
+var app = app || {};
+
+(function(module) {
+
   const repoView = {};
 
   const ui = function() {
-    let $projects = $('#projects'); // Best practice: Cache the DOM query if it's used more than once.
+    let $projects = $('#projects');
 
     $projects.find('ul').empty();
     $projects.show().siblings().hide();
+
   };
 
   const repoTemplate = $('#repo-template').html();
@@ -14,10 +19,15 @@
 
 
   repoView.index = function() {
+
     ui();
 
-    // The jQuery `append` method lets us append an entire array of HTML elements at once:
     $('#projects').append(
-      repos.with('name').map(render)
+      app.repos.with('name').map(render)
     );
+
   };
+
+  module.repoView = repoView;
+
+})(app);
