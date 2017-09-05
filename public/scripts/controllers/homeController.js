@@ -12,7 +12,8 @@ var app = app || {};
     $('.tab-content').hide();
     $('main > section').show();
 
-    $('footer').show()
+    $('footer').show();
+    $('#projects li').hide();
 
   }
 

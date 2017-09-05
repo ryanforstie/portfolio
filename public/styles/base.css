@@ -12,11 +12,12 @@ header {
 }
 
 header {
+  font-family: 'Source Sans Pro', sans-serif;
   background: gray;
   color: #f9f9f9;
   padding-top: 20px;
   min-height: 50px;
-  border-bottom: black 5px solid;
+  /*border-bottom: black 5px solid;*/
 }
 
 header a {
